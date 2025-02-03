@@ -47,11 +47,10 @@ declare -A REPOS=(
     ["device/nothing/Pong"]="https://github.com/Pong-Development/device_nothing_Pong.git"
     ["vendor/nothing/Pong"]="https://github.com/Pong-Development/vendor_nothing_Pong.git"
     ["kernel/nothing/sm8475"]="https://github.com/Pong-Development/kernel_nothing_sm8475.git"
-    ["kernel/nothing/sm8475-modules"]="https://github.com/Pong-Development/kernel_nothing_sm8475-modules.git"
-    ["kernel/nothing/sm8475-devicetrees"]="https://github.com/Pong-Development/kernel_nothing_sm8475-devicetrees.git"
     ["hardware/qcom-caf/sm8450/display"]="https://github.com/Pong-Development/hardware_qcom-caf_sm8450_display.git"
     ["hardware/qcom-caf/sm8450/audio/primary-hal"]="https://github.com/Pong-Development/hardware_qcom_audio-ar.git"
     ["hardware/qcom-caf/sm8450/audio/pal"]="https://github.com/Pong-Development/vendor_qcom_opensource_arpal-lx.git"
+    ["hardware/qcom-caf/sm8450/audio/agm"]="https://github.com/Pong-Development/vendor_qcom_opensource_agm.git"
     ["device/qcom/sepolicy_vndr/sm8450"]="https://github.com/Pong-Development/device_qcom_sepolicy_vndr.git"
     ["packages/apps/ParanoidGlyphPhone2"]="https://github.com/Pong-Development/packages_apps_ParanoidGlyph.git"
     ["hardware/dolby"]="https://github.com/Pong-Development/hardware_dolby.git"
@@ -108,7 +107,7 @@ done
 # KernelSU patch
 echo "Applying KernelSU patch..."
 cd kernel/nothing/sm8475 || exit 1
-curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+git submodule init && git submodule update
 cd - >/dev/null
 echo ""
 echo ""
