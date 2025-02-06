@@ -19,6 +19,9 @@ echo ""
 echo "🔧 Build script by: GHOST | ゴースト"
 echo ""
 
+# Remove graphservices directory
+rm -rf hardware/qcom-caf/sm8450/audio/graphservices
+
 # Explain Depth Cloning
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "📌 Git Depth Cloning Explanation:"
