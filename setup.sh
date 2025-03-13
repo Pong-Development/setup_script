@@ -53,6 +53,7 @@ declare -A REPOS=(
     ["hardware/qcom-caf/sm8450/audio/agm"]="https://github.com/Pong-Development/vendor_qcom_opensource_agm.git"
     ["device/qcom/sepolicy_vndr/sm8450"]="https://github.com/Pong-Development/device_qcom_sepolicy_vndr.git"
     ["packages/apps/ParanoidGlyphPhone2"]="https://github.com/Pong-Development/packages_apps_ParanoidGlyph.git"
+    ["packages/apps/GlyphAdapter"]="https://github.com/Pong-Development/packages_apps_GlyphAdapter.git"
     ["hardware/dolby"]="https://github.com/Pong-Development/hardware_dolby.git"
 )
 
