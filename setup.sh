@@ -44,8 +44,8 @@ fi
 
 # Define repositories
 declare -A REPOS=(
-    ["device/nothing/Pong"]="https://github.com/Pong-Development/device_nothing_Pong_priv.git"
-    ["vendor/nothing/Pong"]="https://github.com/Pong-Development/vendor_nothing_Pong_priv.git"
+    ["device/nothing/Pong"]="https://github.com/Pong-Development/device_nothing_Pong.git"
+    ["vendor/nothing/Pong"]="https://github.com/Pong-Development/vendor_nothing_Pong.git"
     ["kernel/nothing/sm8475"]="https://github.com/Pong-Development/kernel_nothing_sm8475.git"
     ["hardware/qcom-caf/sm8450/display"]="https://github.com/Pong-Development/hardware_qcom-caf_sm8450_display.git"
     ["hardware/qcom-caf/sm8450/audio/primary-hal"]="https://github.com/Pong-Development/hardware_qcom_audio-ar.git"
