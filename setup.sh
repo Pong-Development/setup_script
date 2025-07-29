@@ -52,7 +52,6 @@ declare -A REPOS=(
     ["hardware/qcom-caf/sm8450/audio/pal"]="https://github.com/Pong-Development/vendor_qcom_opensource_arpal-lx.git"
     ["hardware/qcom-caf/sm8450/audio/agm"]="https://github.com/Pong-Development/vendor_qcom_opensource_agm.git"
     ["hardware/qcom-caf/sm8450/audio/graphservices"]="https://github.com/Pong-Development/vendor_qcom_opensource_audioreach-graphservices.git"
-    ["device/qcom/sepolicy_vndr/sm8450"]="https://github.com/Pong-Development/device_qcom_sepolicy_vndr.git"
     ["packages/apps/ParanoidGlyphPhone2"]="https://github.com/Pong-Development/packages_apps_ParanoidGlyph.git"
     ["packages/apps/GlyphAdapter"]="https://github.com/Pong-Development/packages_apps_GlyphAdapter.git"
     ["hardware/dolby"]="https://github.com/Pong-Development/hardware_dolby.git"
@@ -109,7 +108,7 @@ done
 # KernelSU patch
 echo "Applying KernelSU patch..."
 cd kernel/nothing/sm8475 || exit 1
-git submodule init && git submodule update
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v2.0.0
 cd - >/dev/null
 echo ""
 echo ""
